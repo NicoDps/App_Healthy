@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:backgroundTint="#00FFFFFF"
+    android:nestedScrollingEnabled="true"
+    tools:context=".MainActivity"
+    tools:menu="@menu/menu_main">
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,23 +28,20 @@
         android:translationX="100dp"
         android:translationY="70dp" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/BarMenu"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:autoLink="none"
         android:backgroundTint="#00FFFFFF"
-        android:defaultFocusHighlightEnabled="false"
-        android:minHeight="?android:attr/windowTitleSize"
-        android:nestedScrollingEnabled="true"
-        android:paddingStart="0dp"
-        android:paddingEnd="180dp"
-        android:theme="@style/Theme.App_Healthy.PopupOverlay"
-        android:touchscreenBlocksFocus="false"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
-        app:popupTheme="@style/Theme.App_Healthy.PopupOverlay"
-        app:title="Menu"
-        app:titleMargin="@android:dimen/app_icon_size"
-        app:titleMargins="@dimen/fab_margin" />
+        android:clickable="true"
+        android:contextClickable="true"
+        android:drawableTint="#000000"
+        android:linksClickable="true"
+        android:text="Menu"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconTint="#000000" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

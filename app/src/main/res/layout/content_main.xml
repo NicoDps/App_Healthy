@@ -22,7 +22,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-550dp"
-        android:layout_marginTop="-50dp"
         android:layout_marginEnd="-480dp"
         android:layout_marginBottom="-600dp"
         android:fontFamily="sans-serif-light"
@@ -34,29 +33,7 @@
         android:translationY="70dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/barMenu"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/barMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:backgroundTint="#00FFFFFF"
-        android:defaultFocusHighlightEnabled="false"
-        android:minHeight="?android:attr/windowTitleSize"
-        android:nestedScrollingEnabled="true"
-        android:paddingStart="0dp"
-        android:paddingEnd="180dp"
-        android:theme="@style/Theme.App_Healthy.PopupOverlay"
-        android:touchscreenBlocksFocus="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@android:drawable/ic_menu_sort_by_size"
-        app:popupTheme="@style/Theme.App_Healthy.PopupOverlay"
-        app:title="Menu"
-        app:titleMargin="@android:dimen/app_icon_size"
-        app:titleMargins="@dimen/fab_margin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
