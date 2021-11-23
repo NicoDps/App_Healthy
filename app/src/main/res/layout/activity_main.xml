@@ -32,16 +32,10 @@
         android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autoLink="none"
         android:backgroundTint="#00FFFFFF"
-        android:clickable="true"
-        android:contextClickable="true"
-        android:drawableTint="#000000"
-        android:linksClickable="true"
         android:text="Menu"
-        android:textColor="#000000"
-        android:textSize="20sp"
         app:icon="@android:drawable/ic_menu_sort_by_size"
-        app:iconTint="#000000" />
+        app:iconTint="#FFFFFF"
+        app:strokeColor="#FFFFFF" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

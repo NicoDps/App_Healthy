@@ -1,39 +1,33 @@
 package com.example.app_healthy;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+
 
 import com.example.app_healthy.databinding.FragmentFirstBinding;
 
-public class FirstFragment extends Fragment {
-
+public class FirstFragment extends AppCompatActivity {
     private FragmentFirstBinding binding;
 
-    @Override
-    public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
-    ) {
-
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
-        return binding.getRoot();
-
-    }
-
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-    }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
+        binding = FragmentFirstBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        Button next = findViewById(R.id.button5);
+        next.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(getApplication(), SecondFragment.class);
+                startActivity(myIntent);
+            }
+        });
+    }
 }
