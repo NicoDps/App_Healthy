@@ -17,7 +17,7 @@
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Taille"
+        android:text="Taille (mm)"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +123,7 @@
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="Poids"
+        android:text="Poids (Kg)"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -165,5 +165,18 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="SpeakableTextPresentCheck"
         tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginBottom="60dp"
+        android:text="Kg"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintVertical_bias="0.636" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
