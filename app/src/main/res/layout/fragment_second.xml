@@ -73,6 +73,7 @@
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
+        android:text="Age"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"

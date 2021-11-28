@@ -34,11 +34,15 @@ public class ThirdFragment extends AppCompatActivity {
                 String sexe = b.getString("donnee2");
                 String taille = b.getString("donnee3");
                 String poids = b.getString("donnee4");
+                String nom = b.getString("donnee5");
+                String prenom = b.getString("donnee6");
                 Bundle b1 = new Bundle();
                 b1.putString("donnee", age);
                 b1.putString("donnee2", sexe);
                 b1.putString("donnee3", taille);
                 b1.putString("donnee4", poids);
+                b1.putString("donnee5", nom);
+                b1.putString("donnee6", prenom);
                 myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
@@ -55,8 +59,13 @@ public class ThirdFragment extends AppCompatActivity {
                 String taille = b.getString("donnee3");
                 String poids = b.getString("donnee4");
                 TextView t = (TextView) findViewById(R.id.textView11);
-                calcule = (int) ((((Integer.parseInt(poids) * 10) + (Integer.parseInt(taille) * 6.25)) - (Integer.parseInt(age) * 5)) + 5);
-                t.setText(String.valueOf(calcule)+" Kcal");
+                if(sexe.equals("homme")) {
+                    calcule = (int) ((((Integer.parseInt(poids) * 13.75) + (Integer.parseInt(taille) * 5)) - (Integer.parseInt(age) * 6.75)) + 66.47);
+                }
+                else if(sexe.equals("femme")){
+                    calcule =(int) ((((Integer.parseInt(poids) * 9.56) + (Integer.parseInt(taille) * 1.84)) - (Integer.parseInt(age) * 4.67)) + 655.1);
+                }
+                t.setText(calcule +" Kcal");
             }
         });
     }

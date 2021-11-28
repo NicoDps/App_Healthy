@@ -46,6 +46,13 @@
             app:icon="@android:drawable/ic_menu_sort_by_size"
             app:iconTint="@color/black" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
