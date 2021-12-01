@@ -60,6 +60,42 @@
                     android:exported="true"
                     android:label="@string/app_name"
                     android:theme="@style/Theme.App_Healthy.NoActionBar">
-                </activity>
+                    </activity>
+                    <activity
+                        android:name=".SixthFragment"
+                        android:exported="true"
+                        android:label="@string/app_name"
+                        android:theme="@style/Theme.App_Healthy.NoActionBar">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter></activity>
+                    <activity
+                        android:name=".SeventhFragment"
+                        android:exported="true"
+                        android:label="@string/app_name"
+                        android:theme="@style/Theme.App_Healthy.NoActionBar">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter></activity>
+                    <activity
+                        android:name=".EighthFragment"
+                        android:exported="true"
+                        android:label="@string/app_name"
+                        android:theme="@style/Theme.App_Healthy.NoActionBar">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter></activity>
+                    <activity
+                        android:name=".NinethFragment"
+                        android:exported="true"
+                        android:label="@string/app_name"
+                        android:theme="@style/Theme.App_Healthy.NoActionBar">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter></activity>
     </application>
 </manifest>
