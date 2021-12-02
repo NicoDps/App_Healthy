@@ -43,7 +43,7 @@ public class FirstFragment extends AppCompatActivity {
 
         Home.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(getApplication(), MainActivity.class);
+                Intent myIntent = new Intent(getApplication(), TenthFragment.class);
                 Intent in = getIntent();
                 Bundle b = in.getExtras();
                 String age = b.getString("donnee");
@@ -52,18 +52,14 @@ public class FirstFragment extends AppCompatActivity {
                 String poids = b.getString("donnee4");
                 String nom = b.getString("donnee5");
                 String prenom = b.getString("donnee6");
-                EditText Edit1 = ((EditText) findViewById(R.id.editTextTextPersonName16));
-                EditText Edit2 = ((EditText) findViewById(R.id.editTextTextPersonName19));
-                EditText Edit3 = ((EditText) findViewById(R.id.editTextTextPersonName17));
-                EditText Edit4 = ((EditText) findViewById(R.id.editTextTextPersonName18));
-                EditText Edit5 = ((EditText) findViewById(R.id.editTextTextPersonName14));
-                EditText Edit6 = ((EditText) findViewById(R.id.editTextTextPersonName15));
-                Edit1.setText(age);
-                Edit2.setText(sexe);
-                Edit3.setText(taille);
-                Edit4.setText(poids);
-                Edit5.setText(nom);
-                Edit6.setText(prenom);
+                Bundle b1 = new Bundle();
+                b1.putString("donnee", age);
+                b1.putString("donnee2", sexe);
+                b1.putString("donnee3", taille);
+                b1.putString("donnee4", poids);
+                b1.putString("donnee5", nom);
+                b1.putString("donnee6", prenom);
+                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });
