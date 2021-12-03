@@ -2,11 +2,21 @@ package com.example.app_healthy;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Picture;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.ContactsContract;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.SharedPreferences;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,10 +27,13 @@ import com.example.app_healthy.databinding.FragmentSecondBinding;
 
 import org.w3c.dom.Text;
 
+import java.io.File;
 import java.util.Set;
 
 public class SecondFragment extends AppCompatActivity {
+    private static final int REQUETE = 1;
     private FragmentSecondBinding binding;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,7 +64,7 @@ public class SecondFragment extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), FirstFragment.class);
-                Bundle b =new Bundle();
+                Bundle b = new Bundle();
                 EditText Edit1 = ((EditText) findViewById(R.id.editTextTextPersonName3));
                 EditText Edit2 = ((EditText) findViewById(R.id.editTextTextPersonName4));
                 EditText Edit3 = ((EditText) findViewById(R.id.editTextTextPersonName5));
@@ -72,8 +85,28 @@ public class SecondFragment extends AppCompatActivity {
                 b.putString("donnee6", prenom);
                 myIntent.putExtras(b);
                 startActivity(myIntent);
-
             }
         });
+        Button next1 = findViewById(R.id.button19);
+        next1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                prendrephoto();
+            }
+        });
+    }
+
+    private void prendrephoto() {
+        Intent photo = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(photo, REQUETE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUETE && resultCode == RESULT_OK) {
+            Bundle b = data.getExtras();
+            ImageView photo = findViewById(R.id.imageView2);
+            Bitmap imageBitmap = (Bitmap) b.get("data");
+            photo.setImageBitmap(imageBitmap);
+        }
     }
 }

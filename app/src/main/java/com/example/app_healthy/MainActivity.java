@@ -2,6 +2,8 @@ package com.example.app_healthy;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.media.Image;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -10,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -25,10 +28,11 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.app.Activity;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final int REQUETE = 1;
     private ActivityMainBinding binding;
 
 
@@ -65,5 +69,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+        Button next1 = findViewById(R.id.button20);
+        next1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                prendrephoto();
+            }
+        });
+    }
+    private void prendrephoto() {
+        Intent photo = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(photo, REQUETE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUETE && resultCode == RESULT_OK) {
+            Bundle b = data.getExtras();
+            ImageView photo = findViewById(R.id.imageView7);
+            Bitmap imageBitmap = (Bitmap) b.get("data");
+            photo.setImageBitmap(imageBitmap);
+            data.putExtra("bitmap", imageBitmap);
+
+        }
     }
 }

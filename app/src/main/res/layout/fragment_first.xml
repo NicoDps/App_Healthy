@@ -36,7 +36,7 @@
         <Button
             android:id="@+id/button9"
             android:layout_width="161dp"
-            android:layout_height="93dp"
+            android:layout_height="60dp"
             android:backgroundTint="@color/white"
             android:text="Menu"
             android:textColor="@color/black"
@@ -48,10 +48,11 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="90dp"
             android:textAlignment="center"
-            android:textSize="34sp" />
+            android:textSize="34sp"
+            android:translationX="25dp" />
 
         <Button
             android:id="@+id/button4"
