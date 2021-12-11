@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
     <Button
         android:id="@+id/button18"
@@ -52,7 +53,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="127dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,24 +65,26 @@
         android:layout_width="219dp"
         android:layout_height="60dp"
         android:layout_marginEnd="191dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:text="Recettes"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textColorLink="#FFFFFF"
         android:textSize="24sp"
         android:visibility="visible"
         app:icon="@android:drawable/ic_menu_sort_by_size"
-        app:iconTint="@color/black"
+        app:iconTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView48"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Salade de riz complet"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,10 +92,11 @@
 
     <TextView
         android:id="@+id/textView49"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Fish Burger"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,10 +113,11 @@
 
     <TextView
         android:id="@+id/textView50"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Gratin de courgettes"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,10 +134,11 @@
 
     <TextView
         android:id="@+id/textView52"
-        android:layout_width="0dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Spaghettis aux tomates fraîches et basilic"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

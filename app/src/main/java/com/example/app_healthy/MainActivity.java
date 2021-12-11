@@ -1,5 +1,6 @@
 package com.example.app_healthy;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -29,6 +30,7 @@ import android.widget.Button;
 import android.app.Activity;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,53 +45,27 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Button next = findViewById(R.id.button11);
+        TextView Edit1 = ((TextView) findViewById(R.id.textView2));
+        SharedPreferences sharedPreferences= getSharedPreferences("profil", Context.MODE_PRIVATE);
+
+        String nom = sharedPreferences.getString("nom", "Nom");
+        String prenom = sharedPreferences.getString("prenom", "Prenom");
+        String sexe = sharedPreferences.getString("sexe", "Sexe");
+        if(sexe.equals("homme")) {
+            Edit1.setText(new StringBuilder().append("Bonjour Mr ").append(prenom).append(" ").append(nom).toString());
+        }
+        else if(sexe.equals("femme")){
+            Edit1.setText(new StringBuilder().append("Bonjour Mme ").append(prenom).append(" ").append(nom).toString());
+        }
+        else {
+            Edit1.setText("Bonjour et bienvenue");
+        }
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), FirstFragment.class);
-                Bundle b =new Bundle();
-                EditText Edit1 = ((EditText) findViewById(R.id.editTextTextPersonName16));
-                EditText Edit2 = ((EditText) findViewById(R.id.editTextTextPersonName19));
-                EditText Edit3 = ((EditText) findViewById(R.id.editTextTextPersonName17));
-                EditText Edit4 = ((EditText) findViewById(R.id.editTextTextPersonName18));
-                EditText Edit5 = ((EditText) findViewById(R.id.editTextTextPersonName14));
-                EditText Edit6 = ((EditText) findViewById(R.id.editTextTextPersonName15));
-                String age = Edit1.getText().toString();
-                String sexe = Edit2.getText().toString();
-                String taille = Edit3.getText().toString();
-                String poids = Edit4.getText().toString();
-                String nom = Edit5.getText().toString();
-                String prenom = Edit6.getText().toString();
-                b.putString("donnee", age);
-                b.putString("donnee2", sexe);
-                b.putString("donnee3", taille);
-                b.putString("donnee4", poids);
-                b.putString("donnee5", nom);
-                b.putString("donnee6", prenom);
-                myIntent.putExtras(b);
+
                 startActivity(myIntent);
             }
         });
-        Button next1 = findViewById(R.id.button20);
-        next1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                prendrephoto();
-            }
-        });
-    }
-    private void prendrephoto() {
-        Intent photo = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(photo, REQUETE);
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUETE && resultCode == RESULT_OK) {
-            Bundle b = data.getExtras();
-            ImageView photo = findViewById(R.id.imageView7);
-            Bitmap imageBitmap = (Bitmap) b.get("data");
-            photo.setImageBitmap(imageBitmap);
-            data.putExtra("bitmap", imageBitmap);
-
-        }
     }
 }

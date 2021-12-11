@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".SecondFragment">
 
     <EditText
@@ -19,6 +20,7 @@
         android:minHeight="48dp"
         android:text="Taille (cm)"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,9 +30,9 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="280dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginEnd="91dp"
         android:layout_marginBottom="-10dp"
         android:ems="10"
         android:freezesText="true"
@@ -38,6 +40,7 @@
         android:minHeight="48dp"
         android:text="Nom"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -57,6 +60,7 @@
         android:minHeight="48dp"
         android:text="Prenom"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +79,7 @@
         android:minHeight="48dp"
         android:text="Age"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,6 +99,7 @@
         android:minHeight="48dp"
         android:text="Sexe (homme ou femme)"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,6 +114,7 @@
         android:layout_marginBottom="76dp"
         android:text="Healthy"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,6 +135,7 @@
         android:minHeight="48dp"
         android:text="Poids (Kg)"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,14 +146,14 @@
         android:layout_width="184dp"
         android:layout_height="60dp"
         android:layout_marginEnd="227dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:text="Profil"
-        android:textColor="@color/black"
+        android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="22sp"
         android:visibility="visible"
         app:icon="@android:drawable/ic_menu_sort_by_size"
-        app:iconTint="@color/black"
+        app:iconTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,6 +172,21 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
         app:layout_constraintVertical_bias="0.636" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="134dp"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <Button
         android:id="@+id/button19"
         android:layout_width="140dp"
@@ -178,18 +201,5 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="40dp"
-        android:rotation="0"
-        android:rotationX="0"
-        android:rotationY="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

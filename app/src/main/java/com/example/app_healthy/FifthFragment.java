@@ -26,22 +26,6 @@ public class FifthFragment extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), FirstFragment.class);
-                Intent in = getIntent();
-                Bundle b = in.getExtras();
-                String age = b.getString("donnee");
-                String sexe = b.getString("donnee2");
-                String taille = b.getString("donnee3");
-                String poids = b.getString("donnee4");
-                String nom = b.getString("donnee5");
-                String prenom = b.getString("donnee6");
-                Bundle b1 = new Bundle();
-                b1.putString("donnee", age);
-                b1.putString("donnee2", sexe);
-                b1.putString("donnee3", taille);
-                b1.putString("donnee4", poids);
-                b1.putString("donnee5", nom);
-                b1.putString("donnee6", prenom);
-                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });
@@ -50,22 +34,6 @@ public class FifthFragment extends AppCompatActivity {
         next1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), SixthFragment.class);
-                Intent in = getIntent();
-                Bundle b = in.getExtras();
-                String age = b.getString("donnee");
-                String sexe = b.getString("donnee2");
-                String taille = b.getString("donnee3");
-                String poids = b.getString("donnee4");
-                String nom = b.getString("donnee5");
-                String prenom = b.getString("donnee6");
-                Bundle b1 = new Bundle();
-                b1.putString("donnee", age);
-                b1.putString("donnee2", sexe);
-                b1.putString("donnee3", taille);
-                b1.putString("donnee4", poids);
-                b1.putString("donnee5", nom);
-                b1.putString("donnee6", prenom);
-                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });
@@ -73,22 +41,6 @@ public class FifthFragment extends AppCompatActivity {
         next2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), SeventhFragment.class);
-                Intent in = getIntent();
-                Bundle b = in.getExtras();
-                String age = b.getString("donnee");
-                String sexe = b.getString("donnee2");
-                String taille = b.getString("donnee3");
-                String poids = b.getString("donnee4");
-                String nom = b.getString("donnee5");
-                String prenom = b.getString("donnee6");
-                Bundle b1 = new Bundle();
-                b1.putString("donnee", age);
-                b1.putString("donnee2", sexe);
-                b1.putString("donnee3", taille);
-                b1.putString("donnee4", poids);
-                b1.putString("donnee5", nom);
-                b1.putString("donnee6", prenom);
-                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });
@@ -96,22 +48,6 @@ public class FifthFragment extends AppCompatActivity {
         next3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), EighthFragment.class);
-                Intent in = getIntent();
-                Bundle b = in.getExtras();
-                String age = b.getString("donnee");
-                String sexe = b.getString("donnee2");
-                String taille = b.getString("donnee3");
-                String poids = b.getString("donnee4");
-                String nom = b.getString("donnee5");
-                String prenom = b.getString("donnee6");
-                Bundle b1 = new Bundle();
-                b1.putString("donnee", age);
-                b1.putString("donnee2", sexe);
-                b1.putString("donnee3", taille);
-                b1.putString("donnee4", poids);
-                b1.putString("donnee5", nom);
-                b1.putString("donnee6", prenom);
-                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });
@@ -119,22 +55,6 @@ public class FifthFragment extends AppCompatActivity {
         next4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), NinethFragment.class);
-                Intent in = getIntent();
-                Bundle b = in.getExtras();
-                String age = b.getString("donnee");
-                String sexe = b.getString("donnee2");
-                String taille = b.getString("donnee3");
-                String poids = b.getString("donnee4");
-                String nom = b.getString("donnee5");
-                String prenom = b.getString("donnee6");
-                Bundle b1 = new Bundle();
-                b1.putString("donnee", age);
-                b1.putString("donnee2", sexe);
-                b1.putString("donnee3", taille);
-                b1.putString("donnee4", poids);
-                b1.putString("donnee5", nom);
-                b1.putString("donnee6", prenom);
-                myIntent.putExtras(b1);
                 startActivity(myIntent);
             }
         });

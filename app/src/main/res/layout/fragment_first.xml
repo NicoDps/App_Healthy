@@ -6,27 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="620dp"
-        android:text="Healthy"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,63 +26,83 @@
             android:id="@+id/button9"
             android:layout_width="161dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Menu"
-            android:textColor="@color/black"
+            android:textColor="#FFFFFF"
             android:textColorLink="#FFFFFF"
             android:textSize="24sp"
             android:visibility="visible"
             app:icon="@android:drawable/ic_menu_sort_by_size"
-            app:iconTint="@color/black" />
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="360dp"
-            android:layout_height="90dp"
-            android:textAlignment="center"
-            android:textSize="34sp"
-            android:translationX="25dp" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/capture_d_cran_2021_12_11___18_29_49" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:onClick="@string/next"
-            android:text="Acceuil"
-            android:textColor="#000000" />
+            android:text="Accueil"
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Profil"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Calcul Calorique"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Conseils"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Recettes"
-            android:textColor="#000000" />
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="600dp"
+            android:text="Healthy"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:translationY="-570dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

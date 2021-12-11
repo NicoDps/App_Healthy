@@ -7,20 +7,20 @@
         <entry key="app/src/main/res/drawable-v24/IconAppli.xml" value="0.16197916666666667" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.16510416666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/blank_fragment.xml" value="0.22871376811594202" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_eighth.xml" value="0.1971326164874552" />
+        <entry key="app/src/main/res/layout/fragment_eighth.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_fifth.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_fiveth.xml" value="0.14895833333333333" />
-        <entry key="app/src/main/res/layout/fragment_fourth.xml" value="0.14220183486238533" />
-        <entry key="app/src/main/res/layout/fragment_nineth.xml" value="0.1779935275080906" />
-        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.2198581560283688" />
-        <entry key="app/src/main/res/layout/fragment_seventh.xml" value="0.20446096654275092" />
-        <entry key="app/src/main/res/layout/fragment_sixth.xml" value="0.20446096654275092" />
+        <entry key="app/src/main/res/layout/fragment_fourth.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_nineth.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.22363757862414801" />
+        <entry key="app/src/main/res/layout/fragment_seventh.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_sixth.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_tenth.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_third.xml" value="0.12653061224489795" />
+        <entry key="app/src/main/res/layout/fragment_third.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.1712327223734136" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16510416666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16510416666666666" />

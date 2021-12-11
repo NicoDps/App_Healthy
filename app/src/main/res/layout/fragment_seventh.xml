@@ -3,20 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="409dp"
-        android:layout_height="645dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/button16">
 
         <TextView
             android:id="@+id/textView51"
@@ -29,8 +26,9 @@
         <TextView
             android:id="@+id/textView22"
             android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:text="Vous pouvez manger plus de fibres si vous remplacez le pain blanc par du pain complet ! Les féculents complets sont plus riches en fibres et meilleur pour la santé." />
+            android:layout_height="wrap_content"
+            android:text="Vous pouvez manger plus de fibres si vous remplacez le pain blanc par du pain complet ! Les féculents complets sont plus riches en fibres et meilleur pour la santé."
+            android:textColor="#FFFFFF" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,14 +36,14 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="241dp"
+                android:layout_width="215dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView23"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="Préparation"
                     android:textColor="#673AB7"
                     android:textSize="26sp" />
@@ -53,8 +51,9 @@
                 <TextView
                     android:id="@+id/textView24"
                     android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:text="1) Hacher au robot le poisson avec la coriandre." />
+                    android:layout_height="wrap_content"
+                    android:text="1) Hacher au robot le poisson avec la coriandre."
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView26"
@@ -64,8 +63,9 @@
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
-                    android:layout_height="36dp"
-                    android:text="2) Ajouter l’œuf et la chapelure. Saler, poivrer." />
+                    android:layout_height="wrap_content"
+                    android:text="2) Ajouter l’œuf et la chapelure. Saler, poivrer."
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView27"
@@ -75,8 +75,9 @@
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
-                    android:layout_height="39dp"
-                    android:text="3) Faire chauffer l’huile dans une poêle antiadhésive." />
+                    android:layout_height="wrap_content"
+                    android:text="3) Faire chauffer l’huile dans une poêle antiadhésive."
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView30"
@@ -86,8 +87,9 @@
                 <TextView
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:text="4) Façonner avec les mains, préalablement humidifiées, des galettes épaisses." />
+                    android:layout_height="wrap_content"
+                    android:text="4) Façonner avec les mains, préalablement humidifiées, des galettes épaisses."
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView32"
@@ -98,7 +100,8 @@
                     android:id="@+id/textView10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="5) Cuire les galettes de poisson 3 à 4 min de chaque côté. Ouvrir les pains à hamburger" />
+                    android:text="5) Cuire les galettes de poisson 3 à 4 min de chaque côté. Ouvrir les pains à hamburger"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -109,7 +112,8 @@
                     android:id="@+id/textView16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="6) Déposer une feuille de salade verte sur un côté du pain." />
+                    android:text="6) Déposer une feuille de salade verte sur un côté du pain."
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView17"
@@ -120,19 +124,20 @@
                     android:id="@+id/textView18"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="7) Recouvrir d’une galette de poisson, puis d’une feuille de salade verte.   Refermer les pains et servir sans tarder." />
+                    android:text="7) Recouvrir d’une galette de poisson, puis d’une feuille de salade verte.   Refermer les pains et servir sans tarder."
+                    android:textColor="#FFFFFF" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="174dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView34"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="Ingrédients"
                     android:textColor="#673AB7"
                     android:textSize="26sp" />
@@ -143,6 +148,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 500 g de filets de poisson (par exemple lieu noir, panga)"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -151,6 +157,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 30 g de chapelure"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -159,6 +166,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 1 œuf"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -167,6 +175,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 4 pains complets à hamburger"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -175,6 +184,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 1 demi-botte de coriandre"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -183,6 +193,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 2 c. à s. d’huile d’olive"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -191,6 +202,7 @@
                     android:layout_height="wrap_content"
                     android:text="- 8 feuilles de salade verte"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -199,6 +211,7 @@
                     android:layout_height="wrap_content"
                     android:text="- Sel"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -207,6 +220,7 @@
                     android:layout_height="wrap_content"
                     android:text="- Poivre"
                     android:textAlignment="textStart"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp" />
 
                 <TextView
@@ -217,7 +231,8 @@
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/textView14"
@@ -242,14 +257,14 @@
         android:id="@+id/button16"
         android:layout_width="217dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:text="Retour"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:icon="?attr/actionModeCloseDrawable"
         app:iconPadding="8dp"
         app:iconSize="50dp"
-        app:iconTint="@color/black"
+        app:iconTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
