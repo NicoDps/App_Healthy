@@ -11,40 +11,34 @@
         android:layout_width="165dp"
         android:layout_height="44dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="123dp"
-        android:layout_marginBottom="10dp"
         android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textIsSelectable="false"
         android:textSize="26sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="294dp"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="70dp"
         android:text="Selon votre profil, voici le nombre de calories journalières dont vous avez besoin."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textIsSelectable="false"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView5"
@@ -81,30 +75,29 @@
         android:layout_width="395dp"
         android:layout_height="177dp"
         android:layout_marginEnd="-10dp"
-        android:layout_marginBottom="248dp"
         android:text="Le calcul calorique vous permet de connaitre le nombre de calorie dont vous avez besoin par jour. Si vous le dépassez, vous ne pourrez pas les éliminées naturellement, cela veut dire que vous devrez effectuer une activité physique afin d'éliminer le surplus. Donc si vous désirez perdre des kilos, mieux vaut être en dessous de vos calories et d'effectuer en plus une activité physique régulière"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="154dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="163dp"
-        android:layout_marginBottom="40dp"
         android:backgroundTint="#000000"
         android:text="Calculer"
         android:textColor="#FFFFFF"
         app:iconTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:rippleColor="#FFFFFF" />
 
     <ImageView
