@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         TextView Edit1 = ((TextView) findViewById(R.id.textView2));
         SharedPreferences sharedPreferences= getSharedPreferences("profil", Context.MODE_PRIVATE);
 
+
         String nom = sharedPreferences.getString("nom", "Nom");
         String prenom = sharedPreferences.getString("prenom", "Prenom");
         String sexe = sharedPreferences.getString("sexe", "Sexe");
