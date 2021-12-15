@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity {
 
         String nom = sharedPreferences.getString("nom", "Nom");
         String prenom = sharedPreferences.getString("prenom", "Prenom");
-        String sexe = sharedPreferences.getString("sexe", "Sexe");
-        if(sexe.equals("homme")) {
+        String sexe = sharedPreferences.getString("SexeChoisi", "Sexe");
+        if(sexe.equals("Homme")) {
             Edit1.setText(new StringBuilder().append("Bonjour Mr ").append(prenom).append(" ").append(nom).toString());
         }
-        else if(sexe.equals("femme")){
+        else if(sexe.equals("Femme")){
             Edit1.setText(new StringBuilder().append("Bonjour Mme ").append(prenom).append(" ").append(nom).toString());
         }
         else {

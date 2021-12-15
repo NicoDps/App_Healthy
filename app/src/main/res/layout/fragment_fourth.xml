@@ -6,219 +6,224 @@
     android:layout_height="match_parent"
     android:background="#000000">
 
-    <TextView
-        android:id="@+id/textView7"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Healthy"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="235dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="176dp"
-        android:backgroundTint="#000000"
-        android:text="Conseils"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#FFFFFF"
-        android:textSize="24sp"
-        android:visibility="visible"
-        app:icon="@android:drawable/ic_menu_sort_by_size"
-        app:iconTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="412dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="#000000"
-        android:text="Ici Rendez-vous sur Manger-Bouger.fr"
-        android:textColor="#FFFFFF"
-        app:iconTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
-        app:srcCompat="@drawable/sans_titre" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8">
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="307dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Au moins 5 fruits et légumes par jour, par exemple 3 portions de légumes et 2 fruits ou 4 de légumes et 1 fruit."
-            android:textAlignment="center"
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="235dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="176dp"
+            android:backgroundTint="#000000"
+            android:text="Conseils"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:textColorLink="#FFFFFF"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView54"
-            android:layout_width="313dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Il est recommandé de consommer des légumes secs (lentilles, haricots…) au moins 2 fois par semaine car ils sont riches en fibres."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/textView55"
+        <ImageView
+            android:id="@+id/imageView8"
             android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button10"
+            app:srcCompat="@drawable/sans_titre" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="410dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Au moins 30 minutes d’activités physiques dynamiques par jour."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-    </LinearLayout>
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8">
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:srcCompat="@drawable/sans_titre1" />
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Au moins 5 fruits et légumes par jour, par exemple 3 portions de légumes et 2 fruits ou 4 de légumes et 1 fruit."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Il est recommandé de consommer des légumes secs (lentilles, haricots…) au moins 2 fois par semaine car ils sont riches en fibres."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
 
-        <TextView
-            android:id="@+id/textView56"
-            android:layout_width="106dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Privilégiez l’huile de colza, de noix et d’olive. Les matières grasses ajoutées peuvent être consommées tous les jours en petites quantités."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="9sp" />
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Au moins 30 minutes d’activités physiques dynamiques par jour."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView57"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="2 par jour pour les adultes."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/textView58"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Au moins un féculent complet par jour car ils sont naturellement riches en fibres."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/textView59"
-            android:layout_width="93dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="2 fois par semaine, dont un poisson gras (sardines, maquereau, hareng, saumon)"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
-        android:layout_height="120dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        app:srcCompat="@drawable/sans_titre3" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12">
-
-        <TextView
-            android:id="@+id/textView60"
-            android:layout_width="153dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Privilégier la volaille et limiter les autres viandes (porc, bœuf ... etc) à 500g par semaine."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/textView61"
-            android:layout_width="139dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Limiter la charcuterie à 150g par semaine."
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/textView62"
+        <ImageView
+            android:id="@+id/imageView12"
             android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            app:srcCompat="@drawable/sans_titre3" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="410dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="Limiter les produits salés et le sel."
-            android:textAlignment="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12">
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Privilégier la volaille et limiter les autres viandes (porc, bœuf ... etc) à 500g par semaine."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Limiter la charcuterie à 150g par semaine."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="Limiter les produits salés et le sel."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:text="L’alcool, maximum 2 verres par jour et pas tous les jours."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+            app:srcCompat="@drawable/sans_titre1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Privilégiez l’huile de colza, de noix et d’olive. Les matières grasses ajoutées peuvent être consommées tous les jours en petites quantités."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2 par jour pour les adultes."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Au moins un féculent complet par jour car ils sont naturellement riches en fibres."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2 fois par semaine, dont un poisson gras (sardines, maquereau, hareng, saumon)"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#000000"
+            android:text="Ici Rendez-vous sur Manger-Bouger.fr"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
+            android:translationY="25dp"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
         <TextView
-            android:id="@+id/textView63"
-            android:layout_width="140dp"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="sans-serif"
-            android:text="L’alcool, maximum 2 verres par jour et pas tous les jours."
+            android:text="Healthy"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="10sp" />
-    </LinearLayout>
+            android:textSize="16sp"
+            android:translationY="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

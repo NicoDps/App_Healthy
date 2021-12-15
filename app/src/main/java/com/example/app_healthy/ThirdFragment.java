@@ -1,6 +1,5 @@
 package com.example.app_healthy;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.app_healthy.databinding.FragmentThirdBinding;
 
-import org.w3c.dom.Text;
+
 
 public class ThirdFragment extends AppCompatActivity {
     private FragmentThirdBinding binding;
@@ -40,15 +39,15 @@ public class ThirdFragment extends AppCompatActivity {
                 int calcule = 0;
                 SharedPreferences sharedPreferences = getSharedPreferences("profil", Context.MODE_PRIVATE);
                 String age = sharedPreferences.getString("age", "Age");
-                String sexe = sharedPreferences.getString("sexe", "Sexe");
+                String sexe = sharedPreferences.getString("SexeChoisi", "Sexe");
                 String taille = sharedPreferences.getString("taille", "Taille");
                 String poids = sharedPreferences.getString("poids", "Poids");
 
                 TextView t = (TextView) findViewById(R.id.textView11);
-                if(sexe.equals("homme")) {
+                if(sexe.equals("Homme")) {
                     calcule = (int) ((((Integer.parseInt(poids) * 13.75) + (Integer.parseInt(taille) * 5)) - (Integer.parseInt(age) * 6.75)) + 66.47);
                 }
-                else if(sexe.equals("femme")){
+                else if(sexe.equals("Femme")){
                     calcule =(int) ((((Integer.parseInt(poids) * 9.56) + (Integer.parseInt(taille) * 1.84)) - (Integer.parseInt(age) * 4.67)) + 655.1);
                 }
                 t.setText(calcule +" Kcal");
