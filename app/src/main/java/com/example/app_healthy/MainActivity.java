@@ -48,14 +48,14 @@ public class MainActivity extends AppCompatActivity {
         TextView Edit1 = ((TextView) findViewById(R.id.textView2));
         SharedPreferences sharedPreferences= getSharedPreferences("profil", Context.MODE_PRIVATE);
 
-
         String nom = sharedPreferences.getString("nom", "Nom");
         String prenom = sharedPreferences.getString("prenom", "Prenom");
         String sexe = sharedPreferences.getString("SexeChoisi", "Sexe");
-        if(sexe.equals("Homme")) {
+
+        if(sexe.equals("Homme") && !nom.equals("Nom") && !prenom.equals("Prenom")) {
             Edit1.setText(new StringBuilder().append("Bonjour Mr ").append(prenom).append(" ").append(nom).toString());
         }
-        else if(sexe.equals("Femme")){
+        else if(sexe.equals("Femme") && !nom.equals("Nom") && !prenom.equals("Prenom")){
             Edit1.setText(new StringBuilder().append("Bonjour Mme ").append(prenom).append(" ").append(nom).toString());
         }
         else {
@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(getApplication(), FirstFragment.class);
-
                 startActivity(myIntent);
             }
         });

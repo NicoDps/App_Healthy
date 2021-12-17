@@ -44,13 +44,17 @@ public class ThirdFragment extends AppCompatActivity {
                 String poids = sharedPreferences.getString("poids", "Poids");
 
                 TextView t = (TextView) findViewById(R.id.textView11);
-                if(sexe.equals("Homme")) {
+                if(sexe.equals("Homme") && !age.equals("Age") && !taille.equals("Taille") && !poids.equals("Poids")) {
                     calcule = (int) ((((Integer.parseInt(poids) * 13.75) + (Integer.parseInt(taille) * 5)) - (Integer.parseInt(age) * 6.75)) + 66.47);
+                    t.setText(calcule +" Kcal");
                 }
-                else if(sexe.equals("Femme")){
+                else if(sexe.equals("Femme") && !age.equals("Age") && !taille.equals("Taille") && !poids.equals("Poids")){
                     calcule =(int) ((((Integer.parseInt(poids) * 9.56) + (Integer.parseInt(taille) * 1.84)) - (Integer.parseInt(age) * 4.67)) + 655.1);
+                    t.setText(calcule +" Kcal");
                 }
-                t.setText(calcule +" Kcal");
+                else {
+                    t.setText("Remplissez votre profil complétement");
+                }
             }
         });
     }

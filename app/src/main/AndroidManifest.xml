@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.app_healthy">
     <application
         android:allowBackup="true"
@@ -11,90 +10,39 @@
         android:theme="@style/Theme.App_Healthy.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.App_Healthy.NoActionBar">
+            android:exported="true">
+            android:theme="@style/Theme.App_Healthy.NoActionBar"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-            <activity
-                android:name=".FirstFragment"
-                android:exported="true"
-                android:label="@string/app_name"
-                android:theme="@style/Theme.App_Healthy.NoActionBar">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter></activity>
+            </intent-filter>
+        </activity>
         <activity
-                    android:name=".SecondFragment"
-                    android:exported="true"
-                    android:label="@string/app_name"
-                    android:theme="@style/Theme.App_Healthy.NoActionBar">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter></activity>
-                <activity
-                    android:name=".ThirdFragment"
-                    android:exported="true"
-                    android:label="@string/app_name"
-                    android:theme="@style/Theme.App_Healthy.NoActionBar">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter></activity>
-                <activity
-                    android:name=".FourthFragment"
-                    android:exported="true"
-                    android:label="@string/app_name"
-                    android:theme="@style/Theme.App_Healthy.NoActionBar">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter></activity>
-                <activity
-                    android:name=".FifthFragment"
-                    android:exported="true"
-                    android:label="@string/app_name"
-                    android:theme="@style/Theme.App_Healthy.NoActionBar">
-                    </activity>
-                    <activity
-                        android:name=".SixthFragment"
-                        android:exported="true"
-                        android:label="@string/app_name"
-                        android:theme="@style/Theme.App_Healthy.NoActionBar">
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter></activity>
-                    <activity
-                        android:name=".SeventhFragment"
-                        android:exported="true"
-                        android:label="@string/app_name"
-                        android:theme="@style/Theme.App_Healthy.NoActionBar">
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter></activity>
-                    <activity
-                        android:name=".EighthFragment"
-                        android:exported="true"
-                        android:label="@string/app_name"
-                        android:theme="@style/Theme.App_Healthy.NoActionBar">
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter></activity>
-                    <activity
-                        android:name=".NinethFragment"
-                        android:exported="true"
-                        android:label="@string/app_name"
-                        android:theme="@style/Theme.App_Healthy.NoActionBar">
-                    <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
-                        <category android:name="android.intent.category.LAUNCHER" />
-                    </intent-filter></activity>
+            android:name=".FirstFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".SecondFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".ThirdFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".FourthFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".FifthFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".SixthFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".SeventhFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".EighthFragment"
+            android:exported="true"/>
+        <activity
+            android:name=".NinethFragment"
+            android:exported="true"/>
     </application>
 </manifest>

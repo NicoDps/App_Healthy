@@ -42,7 +42,7 @@ import java.util.Set;
 public class SecondFragment extends AppCompatActivity {
     private static final int REQUETE = 1;
     private FragmentSecondBinding binding;
-    String[] sexe = {"Homme","Femme"};
+    String[] sexe = {"Sexe","Homme","Femme"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -109,7 +109,7 @@ public class SecondFragment extends AppCompatActivity {
             TextView Edit7 = ((TextView) findViewById(R.id.textView8));
             ImageView Photo = findViewById(R.id.imageView2);
             Spinner Sexe = (Spinner) findViewById(R.id.Sexe);
-            int sexe = sharedPreferences.getInt("Sexe",-1);
+            int sexe = sharedPreferences.getInt("Sexe",0);
 
             String photo = sharedPreferences.getString("photo", "@tools:sample/avatars[0]");
             assert photo != null;
