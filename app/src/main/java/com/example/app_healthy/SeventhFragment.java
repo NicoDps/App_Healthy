@@ -19,11 +19,11 @@ public class SeventhFragment extends AppCompatActivity {
 
         binding = FragmentSeventhBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Button next = findViewById(R.id.button16);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button MenuRecette = findViewById(R.id.button16);
+        MenuRecette.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(getApplication(), FifthFragment.class);
-                startActivity(myIntent);
+                Intent goMenuRecette = new Intent(getApplication(), FifthFragment.class);
+                startActivity(goMenuRecette);
             }
         });
     }

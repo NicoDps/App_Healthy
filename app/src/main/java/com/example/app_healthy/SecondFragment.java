@@ -1,17 +1,11 @@
 package com.example.app_healthy;
 
-import android.annotation.SuppressLint;
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Picture;
-import android.graphics.drawable.BitmapDrawable;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.util.Base64;
 import android.view.View;
@@ -19,25 +13,15 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.content.SharedPreferences;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-
-
 import com.example.app_healthy.databinding.FragmentSecondBinding;
-
-import org.w3c.dom.Text;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.InputStream;
-import java.util.Set;
 
 public class SecondFragment extends AppCompatActivity {
     private static final int REQUETE = 1;
@@ -50,19 +34,19 @@ public class SecondFragment extends AppCompatActivity {
         binding = FragmentSecondBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         Spinner Sexe = (Spinner) findViewById(R.id.Sexe);
-        ArrayAdapter HF = new ArrayAdapter(this,android.R.layout.simple_spinner_item,sexe);
-        Sexe.setAdapter(HF);
+        ArrayAdapter Selection = new ArrayAdapter(this,android.R.layout.simple_spinner_item,sexe);
+        Sexe.setAdapter(Selection);
         loadProfil();
-        Button next = findViewById(R.id.button2);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button Menu = findViewById(R.id.button2);
+        Menu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(getApplication(), FirstFragment.class);
+                Intent goMenu = new Intent(getApplication(), FirstFragment.class);
                 doSave();
-                startActivity(myIntent);
+                startActivity(goMenu);
             }
         });
-        Button next1 = findViewById(R.id.button19);
-        next1.setOnClickListener(new View.OnClickListener() {
+        Button Photo = findViewById(R.id.button19);
+        Photo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 prendrephoto();
             }
@@ -90,28 +74,28 @@ public class SecondFragment extends AppCompatActivity {
         }
     }
     private void loadProfil()  {
-        SharedPreferences sharedPreferences= getSharedPreferences("profil", Context.MODE_PRIVATE);
+        SharedPreferences Profil = getSharedPreferences("profil", Context.MODE_PRIVATE);
 
-        if(sharedPreferences!= null) {
+        if(Profil != null) {
 
-            String age = sharedPreferences.getString("age", "Age");
-            String taille = sharedPreferences.getString("taille", "Taille (cm)");
-            String poids = sharedPreferences.getString("poids", "Poids (Kg)");
-            String nom = sharedPreferences.getString("nom", "Nom");
-            String prenom = sharedPreferences.getString("prenom", "Prenom");
-            String prendPhoto = sharedPreferences.getString("prendre photo", "Prenez votre photo ici");
+            String age = Profil.getString("age", "Age");
+            String taille = Profil.getString("taille", "Taille (cm)");
+            String poids = Profil.getString("poids", "Poids (Kg)");
+            String nom = Profil.getString("nom", "Nom");
+            String prenom = Profil.getString("prenom", "Prenom");
+            String prendPhoto = Profil.getString("prendre photo", "Prenez votre photo ici");
 
-            EditText Edit1 = ((EditText) findViewById(R.id.editTextTextPersonName3));
-            EditText Edit3 = ((EditText) findViewById(R.id.editTextTextPersonName5));
-            EditText Edit4 = ((EditText) findViewById(R.id.editTextTextPersonName6));
-            EditText Edit5 = ((EditText) findViewById(R.id.editTextTextPersonName));
-            EditText Edit6 = ((EditText) findViewById(R.id.editTextTextPersonName2));
-            TextView Edit7 = ((TextView) findViewById(R.id.textView8));
+            EditText Age = ((EditText) findViewById(R.id.editTextTextPersonName3));
+            EditText Taille = ((EditText) findViewById(R.id.editTextTextPersonName5));
+            EditText Poids = ((EditText) findViewById(R.id.editTextTextPersonName6));
+            EditText Nom = ((EditText) findViewById(R.id.editTextTextPersonName));
+            EditText Prenom = ((EditText) findViewById(R.id.editTextTextPersonName2));
+            TextView PrendrePhoto = ((TextView) findViewById(R.id.textView8));
             ImageView Photo = findViewById(R.id.imageView2);
             Spinner Sexe = (Spinner) findViewById(R.id.Sexe);
-            int sexe = sharedPreferences.getInt("Sexe",0);
+            int sexe = Profil.getInt("Sexe",0);
 
-            String photo = sharedPreferences.getString("photo", "@tools:sample/avatars[0]");
+            String photo = Profil.getString("photo", "@tools:sample/avatars[0]");
             assert photo != null;
             if(!photo.equals("photo"))
             {
@@ -121,19 +105,18 @@ public class SecondFragment extends AppCompatActivity {
                 Photo.setImageBitmap(bitmap);
             }
             Sexe.setSelection(sexe);
-            Edit1.setText(age);
-            Edit3.setText(taille);
-            Edit4.setText(poids);
-            Edit5.setText(nom);
-            Edit6.setText(prenom);
-            Edit7.setText(prendPhoto);
+            Age.setText(age);
+            Taille.setText(taille);
+            Poids.setText(poids);
+            Nom.setText(nom);
+            Prenom.setText(prenom);
+            PrendrePhoto.setText(prendPhoto);
         }
     }
 
     public void doSave()  {
-        SharedPreferences sharedPreferences= getSharedPreferences("profil", Context.MODE_PRIVATE);
-
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences Profil= getSharedPreferences("profil", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = Profil.edit();
 
         EditText Edit1 = ((EditText) findViewById(R.id.editTextTextPersonName3));
         EditText Edit3 = ((EditText) findViewById(R.id.editTextTextPersonName5));
@@ -158,15 +141,14 @@ public class SecondFragment extends AppCompatActivity {
     }
     public static String encodeTobase64(Bitmap image) {
         Bitmap bitmap_image = image;
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap_image.compress(Bitmap.CompressFormat.PNG, 100, baos);
-        byte[] b = baos.toByteArray();
+        ByteArrayOutputStream bytePhoto = new ByteArrayOutputStream();
+        bitmap_image.compress(Bitmap.CompressFormat.PNG, 100, bytePhoto);
+        byte[] b = bytePhoto.toByteArray();
         String imageEncoded = Base64.encodeToString(b, Base64.DEFAULT);
 
         return imageEncoded;
     }
     public void onBackPressed() {
         doSave();
-        super.onBackPressed();
     }
 }

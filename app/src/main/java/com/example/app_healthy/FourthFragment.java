@@ -5,12 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.app_healthy.databinding.FragmentFourthBinding;
-
 
 public class FourthFragment extends AppCompatActivity {
     private FragmentFourthBinding binding;
@@ -22,19 +18,19 @@ public class FourthFragment extends AppCompatActivity {
 
         binding = FragmentFourthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        Button next = findViewById(R.id.button10);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button Menu = findViewById(R.id.button10);
+        Menu.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(getApplication(), FirstFragment.class);
-                startActivity(myIntent);
+                Intent goMenu = new Intent(getApplication(), FirstFragment.class);
+                startActivity(goMenu);
             }
         });
-        Button next1 = findViewById(R.id.button13);
-        next1.setOnClickListener(new View.OnClickListener() {
+        Button lien = findViewById(R.id.button13);
+        lien.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 String url = "https://www.mangerbouger.fr";
-                Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( url ) );
-                startActivity(intent);
+                Intent goLien = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(goLien);
             }
         });
     }
